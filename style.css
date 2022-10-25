@@ -1,0 +1,205 @@
+table{
+  width: 1080px;
+}
+a{
+  text-decoration: none;
+  font-family: fantasy;
+}
+.styled-table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 20%;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+  background-color: #db2403;
+  color: #0e9bfa;
+  text-align: left;
+}
+.styled-table th{
+  padding: 12px 15px;
+}
+.styled-table td {
+  padding: 12px 15px;
+  font-family: fantasy;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #ec0d0df6;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #ffbcb0;
+}
+.styled-table tbody tr:nth-of-type(odd) {
+  background-color: #ffbf00;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #6e537e;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #400452;
+}
+.styled-table th{
+  background-color:#083ec7
+}
+.buttontxt{
+ font-family: fantasy;
+ text-decoration: none;
+
+}
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: rgb(5, 166, 247);
+  background: rgb(5, 166, 247);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  left: 1070px;
+  top: 550px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: rgb(5, 166, 247)
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(5, 166, 247);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+.creatent{
+  position: absolute;
+  top: 200px;
+  left: 42%;
+  font-family: fantasy;
+  font-size:xx-large;
+}
+.style-table-2 {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 20%;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.style-table-2 thead tr {
+  background-color: #02bffef6;
+  color: #0e9bfa;
+  text-align: left;
+}
+.style-table-2 th{
+  padding: 12px 15px;
+}
+.style-table-2 td {
+  padding: 12px 15px;
+  font-family: fantasy;
+}
+.style-table-2 tbody tr {
+  border-bottom: 1px solid #02bffef6;
+}
+
+.style-table-2 tbody tr:nth-of-type(even) {
+  background-color: #fffffff6;
+}
+.style-table-2 tbody tr:nth-of-type(odd) {
+  background-color: #c4c3c3;
+}
+
+.style-table-2 tbody tr:last-of-type {
+  border-bottom: 2px solid #02bffef6;
+}
+.style-table-2 tbody tr.active-row {
+  font-weight: bold;
+  color: #02bffef6;
+}
+.style-table-2 th{
+  background-color:#02bffef6;
+}
+
+.style-table-3 {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 20%;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.style-table-3 thead tr {
+  background-color: #db2403;
+  color: #ffffff;
+  text-align: left;
+}
+.style-table-3 th{
+  padding: 12px 15px;
+}
+.style-table-3 td {
+  padding: 12px 15px;
+  font-family: fantasy;
+}
+.style-table-3 tbody tr {
+  border-bottom: 1px solid #ec0d0df6;
+}
+
+.style-table-3 tbody tr:nth-of-type(even) {
+  background-color: #5A5A5A;
+}
+.style-table-3 tbody tr:nth-of-type(odd) {
+  background-color: #d70606;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #ffffff;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #ffffff;
+}
